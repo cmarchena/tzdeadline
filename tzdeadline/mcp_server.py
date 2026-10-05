@@ -4,7 +4,12 @@ from __future__ import annotations
 
 from datetime import datetime
 
-from mcp.server.fastmcp import FastMCP
+try:
+    # MCP SDK 2.x: FastMCP was renamed to MCPServer and the module moved.
+    from mcp.server.mcpserver import MCPServer as FastMCP
+except ImportError:
+    # MCP SDK 1.x keeps the original path.
+    from mcp.server.fastmcp import FastMCP
 
 from tzdeadline.core.converter import ConversionError, convert
 
@@ -23,9 +28,12 @@ def convert_time(
     """
     cleaned = datetime_str.strip().replace("T", " ")
     try:
-        dt = datetime.strptime(cleaned, "%Y-%m-%d %H:%M")
-    except ValueError:
-        dt = datetime.strptime(cleaned, "%Y-%m-%d %H:%M:%S")
+        try:
+            dt = datetime.strptime(cleaned, "%Y-%m-%d %H:%M")
+        except ValueError:
+            dt = datetime.strptime(cleaned, "%Y-%m-%d %H:%M:%S")
+    except ValueError as exc:
+        return f"error: unable to parse datetime {datetime_str!r} ({exc})"
 
     try:
         result = convert(dt, from_tz, to_tz)

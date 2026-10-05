@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=70", "wheel"]
 build-backend = "setuptools.backends.legacy:build"
 
 [project]
@@ -9,7 +9,7 @@ description = "Convert a date-time from one IANA timezone to another and display
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "mcp",
+    "mcp>=1.2,<3",
 ]
 
 [project.scripts]

@@ -4,7 +4,7 @@ from zoneinfo import ZoneInfo
 from hypothesis import given, settings, assume
 from hypothesis import strategies as st
 
-from tzdeadline.convert import convert
+from tzdeadline.core.converter import convert
 
 COMMON_ZONES = [
     "UTC",
@@ -36,7 +36,7 @@ def test_same_utc_instant(
     to_tz: str,
 ) -> None:
     dt = datetime(year, month, day, hour, minute)
-    converted = convert(dt, from_tz, to_tz)
+    converted = convert(dt, from_tz, to_tz).converted_dt
     original_utc = dt.replace(tzinfo=ZoneInfo(from_tz)).astimezone(ZoneInfo("UTC"))
     assert converted.astimezone(ZoneInfo("UTC")) == original_utc
 
@@ -62,8 +62,8 @@ def test_round_trip_wall_time(
 ) -> None:
     dt = datetime(year, month, day, hour, minute)
     try:
-        there = convert(dt, from_tz, to_tz)
-        back = convert(there.replace(tzinfo=None), to_tz, from_tz)
+        there = convert(dt, from_tz, to_tz).converted_dt
+        back = convert(there.replace(tzinfo=None), to_tz, from_tz).converted_dt
     except Exception:
         assume(False)
         return
