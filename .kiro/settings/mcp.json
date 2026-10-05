@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "tzdeadline": {
+      "command": "python",
+      "args": ["-m", "tzdeadline.server"],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}

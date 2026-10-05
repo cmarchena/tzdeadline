@@ -1,1 +1,12 @@
-__pycache__:
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+demo/
+*.mp4
+.DS_Store
