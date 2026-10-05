@@ -1,0 +1,12 @@
+{
+  "name": "tzdeadline",
+  "version": "1.0.0",
+  "description": "Guidance for the TZ Deadline converter. Loads when you mention tzdeadline, timezone, or deadline conversion.",
+  "keywords": ["tzdeadline", "timezone", "deadline", "zoneinfo", "convert"],
+  "skills": [
+    {
+      "name": "setup",
+      "path": "skills/setup/SKILL.md"
+    }
+  ]
+}
