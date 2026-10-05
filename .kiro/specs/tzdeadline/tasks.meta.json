@@ -1,0 +1,183 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Set up project structure and packaging": [
+      {
+        "executionId": "8f0549f4-ca5d-4d6a-a01e-c52d361e3fe5",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791212360829
+      },
+      {
+        "executionId": "8f0549f4-ca5d-4d6a-a01e-c52d361e3fe5",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791212378855
+      },
+      {
+        "executionId": "8f0549f4-ca5d-4d6a-a01e-c52d361e3fe5",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791212589356
+      }
+    ],
+    "2.1 Create `tzdeadline/core/parser.py`": [
+      {
+        "executionId": "8f0549f4-ca5d-4d6a-a01e-c52d361e3fe5",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791212361432
+      },
+      {
+        "executionId": "8f0549f4-ca5d-4d6a-a01e-c52d361e3fe5",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791212594506
+      },
+      {
+        "executionId": "ca5c9fc8-d14d-4fee-962b-06d2a98030bc",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791213570542
+      },
+      {
+        "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791213716550
+      },
+      {
+        "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791213723009
+      },
+      {
+        "executionId": "a9d56784-5dfb-4a29-862b-be7d6e973450",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791213969498
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791214124777
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791214558575
+      }
+    ],
+    "3.1 Create `tzdeadline/core/converter.py`": [
+      {
+        "executionId": "8f0549f4-ca5d-4d6a-a01e-c52d361e3fe5",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791212361984
+      },
+      {
+        "executionId": "8f0549f4-ca5d-4d6a-a01e-c52d361e3fe5",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791212597318
+      },
+      {
+        "executionId": "ca5c9fc8-d14d-4fee-962b-06d2a98030bc",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791213573109
+      },
+      {
+        "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791213716733
+      },
+      {
+        "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791213725950
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791214561708
+      }
+    ],
+    "4. Checkpoint — Ensure all tests pass": [
+      {
+        "executionId": "8f0549f4-ca5d-4d6a-a01e-c52d361e3fe5",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791212362252
+      },
+      {
+        "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791213716967
+      }
+    ],
+    "5.1 Create `tzdeadline/core/formatter.py`": [
+      {
+        "executionId": "8f0549f4-ca5d-4d6a-a01e-c52d361e3fe5",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791212362423
+      },
+      {
+        "executionId": "8f0549f4-ca5d-4d6a-a01e-c52d361e3fe5",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791212600019
+      },
+      {
+        "executionId": "ca5c9fc8-d14d-4fee-962b-06d2a98030bc",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791213575771
+      },
+      {
+        "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791213717244
+      },
+      {
+        "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791213728556
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791214564803
+      }
+    ],
+    "6.1 Create `tzdeadline/__main__.py`": [
+      {
+        "executionId": "8f0549f4-ca5d-4d6a-a01e-c52d361e3fe5",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791212362646
+      },
+      {
+        "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791213717408
+      }
+    ],
+    "7.1 Create `tzdeadline/server.py`": [
+      {
+        "executionId": "8f0549f4-ca5d-4d6a-a01e-c52d361e3fe5",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791212362895
+      },
+      {
+        "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791213717585
+      }
+    ],
+    "8. Final checkpoint — Ensure all tests pass": [
+      {
+        "executionId": "8f0549f4-ca5d-4d6a-a01e-c52d361e3fe5",
+        "chatSessionId": "sess_fd7718e6-f19b-45b8-90a4-e93172fe7a26",
+        "timestamp": 1791212363113
+      },
+      {
+        "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791213717863
+      }
+    ],
+    "2. Implement `tzdeadline.core.parser`": [
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791214558708
+      }
+    ]
+  }
+}

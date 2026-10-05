@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "tzdeadline"
+version = "0.1.0"
+description = "Convert a date-time from one IANA timezone to another and display a human-readable countdown."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp",
+]
+
+[project.scripts]
+tzdeadline = "tzdeadline.__main__:main"
+
+[project.optional-dependencies]
+dev = [
+    "hypothesis",
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tzdeadline*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

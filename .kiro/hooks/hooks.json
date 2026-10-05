@@ -1,0 +1,14 @@
+{
+  "hooks": [
+    {
+      "name": "pytest-on-python-save",
+      "description": "Run pytest when a Python file under tzdeadline/ or tests/ is saved.",
+      "event": "PostFileSave",
+      "matcher": "^(tzdeadline/.*\\.py|tests/.*\\.py)$",
+      "action": {
+        "type": "command",
+        "command": "python -m pytest -q"
+      }
+    }
+  ]
+}
