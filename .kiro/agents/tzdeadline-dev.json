@@ -1,0 +1,24 @@
+{
+  "name": "tzdeadline-dev",
+  "description": "Development agent for tzdeadline. Focused on core, CLI, MCP server, and tests.",
+  "tools": ["read", "write", "shell"],
+  "includeMcpJson": false,
+  "includePowers": false,
+  "resources": [
+    "file://./.kiro/specs/tzdeadline/requirements.md",
+    "file://./.kiro/specs/tzdeadline/design.md",
+    "file://./.kiro/specs/tzdeadline/tasks.md",
+    "file://./.kiro/steering/python-style.md"
+  ],
+  "permissions": {
+    "rules": [
+      {
+        "capability": "shell",
+        "match": ["python *", "python3 *", "pytest *", "git *", "pip *"],
+        "effect": "allow"
+      }
+    ]
+  },
+  "prompt": "You are the development assistant for tzdeadline, a Python CLI and MCP tool that converts a local date-time between IANA timezones and shows a countdown. Always follow .kiro/steering/python-style.md. Implement and change code only to match the loaded requirements, design, and tasks. Prefer stdlib zoneinfo. Keep the core (parser, converter, formatter) separate from the CLI and the MCP server. On bad input, return clear errors — never a stack trace to the user. Run pytest after meaningful changes.",
+  "welcomeMessage": "tzdeadline-dev ready. Spec, design, tasks, and python-style are loaded. What should we work on?"
+}
