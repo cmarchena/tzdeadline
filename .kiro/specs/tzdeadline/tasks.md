@@ -45,8 +45,8 @@ entry point, and an MCP server entry point. The core is split into three indepen
       `ParseError` on garbage input
     - _Requirements: 3.1, 3.2_
 
-- [ ] 3. Implement `tzdeadline.core.converter`
-  - [-] 3.1 Create `tzdeadline/core/converter.py`
+- [x] 3. Implement `tzdeadline.core.converter`
+  - [x] 3.1 Create `tzdeadline/core/converter.py`
     - Define `ConversionError(ValueError)` and `ConversionResult` frozen dataclass
     - Implement `convert(dt, source_tz, target_tz)`: load both `ZoneInfo` objects (re-raise
       `ZoneInfoNotFoundError` as `ConversionError`), strip offset if dt is aware, attach source
@@ -80,8 +80,8 @@ entry point, and an MCP server entry point. The core is split into three indepen
 - [ ] 4. Checkpoint — Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 5. Implement `tzdeadline.core.formatter`
-  - [-] 5.1 Create `tzdeadline/core/formatter.py`
+- [x] 5. Implement `tzdeadline.core.formatter`
+  - [x] 5.1 Create `tzdeadline/core/formatter.py`
     - Implement `format_iso(dt: datetime) -> str` returning ISO 8601 with UTC offset
     - Implement `format_countdown(dt: datetime, now: datetime | None = None) -> str`:
       default `now` to `datetime.now(tz=timezone.utc)`, compute delta, format as

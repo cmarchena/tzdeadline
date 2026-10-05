@@ -1,8 +1,11 @@
-"""MCP server exposing convert_time for Kiro."""
+"""MCP server exposing convert_time for Kiro.
+
+Backward-compatible entry point: accepts the historical ``from_tz``/``to_tz``
+parameter names and delegates to :mod:`tzdeadline.server`. New clients should
+prefer ``tzdeadline.server`` (``source_tz``/``target_tz``).
+"""
 
 from __future__ import annotations
-
-from datetime import datetime
 
 try:
     # MCP SDK 2.x: FastMCP was renamed to MCPServer and the module moved.
@@ -11,7 +14,7 @@ except ImportError:
     # MCP SDK 1.x keeps the original path.
     from mcp.server.fastmcp import FastMCP
 
-from tzdeadline.core.converter import ConversionError, convert
+from tzdeadline.server import convert_time_dict
 
 mcp = FastMCP("tzdeadline")
 
@@ -21,27 +24,15 @@ def convert_time(
     datetime_str: str,
     from_tz: str,
     to_tz: str,
-) -> str:
+) -> dict:
     """Convert a local date-time from one IANA timezone to another.
 
-    datetime_str examples: "2026-10-05 23:59" or "2026-10-05T23:59"
+    datetime_str examples: "2026-10-05 23:59" or "2026-10-05T23:59".
+
+    Returns {"converted_datetime": str, "countdown": str} on success,
+    or {"error": str} on invalid input.
     """
-    cleaned = datetime_str.strip().replace("T", " ")
-    try:
-        try:
-            dt = datetime.strptime(cleaned, "%Y-%m-%d %H:%M")
-        except ValueError:
-            dt = datetime.strptime(cleaned, "%Y-%m-%d %H:%M:%S")
-    except ValueError as exc:
-        return f"error: unable to parse datetime {datetime_str!r} ({exc})"
-
-    try:
-        result = convert(dt, from_tz, to_tz)
-    except ConversionError as exc:
-        return f"error: {exc}"
-
-    out = result.converted_dt
-    return f"{out.isoformat()} ({result.target_tz})"
+    return convert_time_dict(datetime_str, source_tz=from_tz, target_tz=to_tz)
 
 
 if __name__ == "__main__":

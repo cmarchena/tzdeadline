@@ -46,14 +46,17 @@ def convert(
         ConversionError: if source_tz or target_tz is not recognised by zoneinfo.
     """
     # Load both ZoneInfo objects up-front so we surface errors early.
+    # ZoneInfo raises ZoneInfoNotFoundError for unknown names but plain
+    # ValueError for malformed ones (e.g. ""), so catch both to honour
+    # Property 3: any non-IANA string SHALL raise ConversionError.
     try:
         source_zone = ZoneInfo(source_tz)
-    except ZoneInfoNotFoundError as exc:
+    except (ZoneInfoNotFoundError, ValueError) as exc:
         raise ConversionError(f"Unknown timezone: {source_tz!r}") from exc
 
     try:
         target_zone = ZoneInfo(target_tz)
-    except ZoneInfoNotFoundError as exc:
+    except (ZoneInfoNotFoundError, ValueError) as exc:
         raise ConversionError(f"Unknown timezone: {target_tz!r}") from exc
 
     # If dt already carries offset information, strip it so the wall-clock

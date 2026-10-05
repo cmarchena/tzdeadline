@@ -90,6 +90,21 @@
         "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
         "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
         "timestamp": 1791214561708
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791216135106
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791216140740
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791216619800
       }
     ],
     "4. Checkpoint — Ensure all tests pass": [
@@ -102,6 +117,11 @@
         "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
         "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
         "timestamp": 1791213716967
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791217486808
       }
     ],
     "5.1 Create `tzdeadline/core/formatter.py`": [
@@ -134,6 +154,21 @@
         "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
         "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
         "timestamp": 1791214564803
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791216138038
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791216622797
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791217475006
       }
     ],
     "6.1 Create `tzdeadline/__main__.py`": [
@@ -146,6 +181,11 @@
         "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
         "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
         "timestamp": 1791213717408
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791217486908
       }
     ],
     "7.1 Create `tzdeadline/server.py`": [
@@ -158,6 +198,11 @@
         "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
         "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
         "timestamp": 1791213717585
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791217486991
       }
     ],
     "8. Final checkpoint — Ensure all tests pass": [
@@ -170,6 +215,11 @@
         "executionId": "576a6c45-d9fb-4bc1-89d3-26379586ec09",
         "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
         "timestamp": 1791213717863
+      },
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791217487075
       }
     ],
     "2. Implement `tzdeadline.core.parser`": [
@@ -177,6 +227,55 @@
         "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
         "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
         "timestamp": 1791214558708
+      }
+    ],
+    "3. Implement `tzdeadline.core.converter`": [
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791216619917
+      }
+    ],
+    "5. Implement `tzdeadline.core.formatter`": [
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791217475118
+      }
+    ],
+    "2.2 Write property test for parser round-trip (Property 2)": [
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791217503410
+      }
+    ],
+    "2.3 Write property test for invalid datetime strings → error (Property 4)": [
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791217506433
+      }
+    ],
+    "2.4 Write unit tests for parser": [
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791217509194
+      }
+    ],
+    "3.2 Write property test for round-trip timezone conversion (Property 1)": [
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791217512368
+      }
+    ],
+    "3.3 Write property test for converted datetime in target zone (Property 6)": [
+      {
+        "executionId": "6cb73c2f-80d8-4b3d-8b7a-0641b46fd4ed",
+        "chatSessionId": "sess_04782cb1-da60-41bd-b963-9555d738f6e5",
+        "timestamp": 1791217515380
       }
     ]
   }
